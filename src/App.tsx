@@ -161,7 +161,7 @@ export const App = () => {
                 tag="h3"
                 className={appSt.productTitle}
               >
-                20 000 000 ₽ ежемесячно
+                20 млн ₽ за алмазы
               </Typography.TitleResponsive>
 
               <Typography.Text
@@ -170,7 +170,7 @@ export const App = () => {
                 color="secondary"
                 className={appSt.productText}
               >
-                При наличии алмаза
+                Каждый месяц подписки на Альфа-Смарт — 1 алмаз
               </Typography.Text>
               <Gap size={16} />
               <div
@@ -183,7 +183,7 @@ export const App = () => {
                   width: "fit-content",
                 }}
               >
-                Подробнее
+                Как участвовать
               </div>
             </div>
             <img
