@@ -1,8 +1,9 @@
 import { Typography } from "@alfalab/core-components/typography";
 import { ButtonMobile } from "@alfalab/core-components/button/mobile";
-import rocket from "../assets/rocket.png";
+import bigSmile from "../assets/bigSmile.png";
 import { thxSt } from "./style.css";
 import { appSt } from "../style.css.ts";
+import { Gap } from "@alfalab/core-components/gap";
 
 export const ThxLayout = () => {
   const submit = () => {
@@ -16,26 +17,22 @@ export const ThxLayout = () => {
       <div className={thxSt.container}>
         <img
           alt="Картинка ракеты"
-          src={rocket}
-          width={135}
+          src={bigSmile}
+          width={250}
           className={thxSt.rocket}
         />
         <Typography.TitleResponsive
           font="system"
           tag="h1"
           view="large"
-          defaultMargins
+          defaultMargins={false}
           weight="bold"
         >
-          Только тссс
+          Сервис пока недоступен
         </Typography.TitleResponsive>
+        <Gap size={8} />
         <Typography.Text tag="p" view="primary-medium">
-          Вы поучаствовали в очень важном исследовании, которое поможет создать
-          лучший тариф. Вы – наш герой!
-        </Typography.Text>
-        <Typography.Text tag="p" view="primary-medium" defaultMargins={false}>
-          {`Оформить существующую подписку Альфа-Смарт вы можете на следующем
-          экране.`}
+          Вся команда очень старается, скоро всё заработает!
         </Typography.Text>
       </div>
 
@@ -43,10 +40,10 @@ export const ThxLayout = () => {
         <ButtonMobile
           block
           view="primary"
-          href="https://alfa.me/ght"
+          href="https://online.alfabank.ru/"
           onClick={submit}
         >
-          Оформить подписку
+          Спасибо, понятно!
         </ButtonMobile>
       </div>
     </>
