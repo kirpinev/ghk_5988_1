@@ -6,12 +6,6 @@ import { appSt } from "../style.css.ts";
 import { Gap } from "@alfalab/core-components/gap";
 
 export const ThxLayout = () => {
-  const submit = () => {
-    window.gtag("event", "5988_get_real_sub", {
-      variant_name: "5988_1",
-    });
-  };
-
   return (
     <>
       <div className={thxSt.container}>
@@ -37,12 +31,7 @@ export const ThxLayout = () => {
       </div>
 
       <div className={appSt.bottomBtn}>
-        <ButtonMobile
-          block
-          view="primary"
-          href="https://online.alfabank.ru/"
-          onClick={submit}
-        >
+        <ButtonMobile block view="primary" href="https://online.alfabank.ru/">
           Спасибо, понятно!
         </ButtonMobile>
       </div>
