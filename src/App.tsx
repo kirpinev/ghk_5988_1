@@ -166,7 +166,13 @@ export const App = () => {
               </Typography.Text>
               <Gap size={16} />
               <div
-                onClick={() => setIsMoreClicked(true)}
+                onClick={() => {
+                  setIsMoreClicked(true);
+
+                  window.gtag("event", "5988_get_info", {
+                    variant_name: "5988_1",
+                  });
+                }}
                 style={{
                   padding: "4px 16px",
                   backgroundColor: "#19ADFF",
